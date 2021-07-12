@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Video Player</title>
+</head>
+<body>
+  <div class="container-video-player">
+    <video src="video.mp4"></video>
+    <div class="controls-video-player-button">
+      <input class="remain" type="range" min="0" max="100" value="0" step="1">
+      <div class="container-control">
+        <div class="container-control-left">
+          <button type="button" class="playPause">
+            <img src="assets/icons/play.svg" alt="play" class="icons">
+          </button>
+          <span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
+          <button type="button" class="prevTen">
+            <img src="assets/icons/prev.svg" alt="prev 10s" class="icons">
+          </button>
+          <button type="button" class="nextTen">
+            <img src="assets/icons/next.svg" alt="next 10s" class="icons">
+          </button>
+        </div>
+        <div class="container-control-right">
+          <button class="mute" accesskey="p">
+            <img src="assets/icons/unmute.svg" alt="mute" class="icons">
+          </button>
+          <input type="range" id="volume" title="volume" min="0" max="100" step="1" value="100">
+          <button class="replay" accesskey="r">
+            <img src="assets/icons/replay.svg" alt="replay" class="icons">
+          </button>
+          <button class="settings" accesskey="r">
+            <img src="assets/icons/settings.svg" alt="settings" class="icons">
+          </button>
+          <button class="fullscreen" accesskey="r">
+            <img src="assets/icons/fullscreen.svg" alt="fullscreen" class="icons fullscreens">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
